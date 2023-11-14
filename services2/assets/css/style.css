@@ -10,7 +10,7 @@
     background-color: antiquewhite;
 }
 
-.services .container{
+.services .containers{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -20,41 +20,43 @@
     padding-bottom: 20px;
 }
 
-.services .container .card{
+.services .containers .cards{
     display: flex;
     background: #ffffff;
     height: 100px;
 }
 
-.services .container img{
+.services .containers img{
     width: 80px;
     height: 80px;
     margin-left: 1rem;
     margin-top: 10px;
 }
 
-.services .container .card a{
+.services .containers .cards a{
     text-decoration: none;
     font-family: 'Forum',serif;
     font-size: 30px;
     color: #1d1d1d;
     text-align: center;
+    margin-left: 1rem;
+    margin-top: 2rem;
 }
 
-.services .container a:hover{
+.services .containers a:hover{
     color: rgb(216, 53, 154);
     text-decoration: underline;
     transition: all ease .4s;
 }
 
 @media screen and (max-width: 768px){
-    .services .container{
+    .services .containers{
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    .services .container .card{
+    .services .containers .cards{
         display: flex;
         background: #ffffff;
         height: 60px;
@@ -62,12 +64,12 @@
         margin: auto;
     }
 
-    .services .container img{
+    .services .containers img{
         height: 40px;
         width: 40px;
     }
 
-    .services .container a{
+    .services .containers a{
         text-decoration: none;
         font-family: 'Forum',serif;
         font-size: 20px;
