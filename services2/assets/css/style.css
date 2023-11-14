@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Marcellus&family=Montserrat:wght@400;600&family=Shippori+Mincho+B1:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.services{
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.services .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 50%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.services .container .card{
+    display: flex;
+    background: #ffffff;
+    height: 100px;
+}
+
+.services .container img{
+    width: 80px;
+    height: 80px;
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+
+.services .container .card a{
+    text-decoration: none;
+    font-family: 'Forum',serif;
+    font-size: 30px;
+    color: #1d1d1d;
+    text-align: center;
+}
+
+.services .container a:hover{
+    color: rgb(216, 53, 154);
+    text-decoration: underline;
+    transition: all ease .4s;
+}
+
+@media screen and (max-width: 768px){
+    .services .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .services .container .card{
+        display: flex;
+        background: #ffffff;
+        height: 60px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .services .container img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .services .container a{
+        text-decoration: none;
+        font-family: 'Forum',serif;
+        font-size: 20px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+}
